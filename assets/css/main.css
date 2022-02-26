@@ -2338,13 +2338,14 @@
 			display: block;
 			margin: 3em 0 3em -3em;
 			position: relative;
-			width: calc(100% + 6em);
+			width: calc(100% + 6em); !important;
+		}
 		}
 
 			.box .image.featured img {
 				border-radius: 0;
 				display: block;
-				width: 100%;
+				width: 100%; !important
 			}
 
 			.box .image.featured:first-child {
@@ -2488,10 +2489,13 @@
 		list-style: decimal;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
+		
 	}
 
 		ol li {
 			padding-left: 0.25em;
+			font-size: 1.25em;
+			font-weight: 400;
 		}
 
 	ul {

@@ -37,20 +37,79 @@
 				<section id="main" class="container">
 					<header>
 						<h2>Week 2</h2>
-						<p>A generic page for every non-generic situation.</p>
+						<p> The 50 Shades Assignment</p>
 					</header>
 					<div class="box">
-						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
-						<h3>This is a subheading</h3>
-						<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+						<span class="image featured"><center><img src="images/pro_017sm.jpg" width=90% lt="" /></center></span>
+						<h3>The Idea</h3>
+						<p>Being a hardware engineer with particular interests in PCB design, I found myself soldering/tinkering with copper wires all the time. As time went by I started exploring other conductive materials that could be used to complete circuits or just make them more beautiful.Silver was the first thing that came to my mind as it is a way better conductor than copper and can be polished to reveal a beautiful finish! I was enthusiastic about silver however my excitement did not quite resonate with my parents or my bank account at the time. Since silver is particularly expensive, I chose the next best thing - Brass. This lustrous material is often used for locks, hinges, gears, bearings, ammunition casings, zippers, plumbing, hose couplings, valves, and electrical plugs and sockets where corrosion resistance and low friction are required. What if we can get brass "wires" that can be used for building circuits and give off an aesthetic feel to the entire thing? I started pondering this question over and over again but really couldn't get myself to try it. One of the main reasons was that "circuits" are not exactly beautiful or artsy and I wanted something that attracts attention.  </p>
+						<p>
+                            Then I thought of creating "sculptures" from thin brass rods that can be easily molded into whatever shape I wanted and stay like that. After rattling my thoughts for a few more hours I landed on soldering "LEDs" to these brass sculptures in some way that they don't hinder the appearance but instead enhance it. There were two particular problems with this prospect:-<ol>
+
+
+							 
+                        <li>  Can your solder brass rods? </li>
+                    	<li>  can it conduct electricity that well? </li>
+					</ol> 
+				</p>	<span class="image featured"><center><img src="images/102-sm.jpg" width=90% lt="" /></center></span>
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
-								<h3>And now a subheading</h3>
-								<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>
+								
+								<h3>
+									
+									Testing the Theory and Creating a Plan !
+								</h3>
+								<p>I planned to first test my hypothesis by taking two pieces of 1mm brass rods and trying to solder them together.
+                                    When I first tried this I struggled as the pieces won't stay in one place long enough for me to heat them and melt the solder in the joint. I fixed this issue by using a third-hand tool at the makerspace and increasing the temperature of the soldering iron.
+									</p> 
+									<p>
+                                    Once I knew I could solder these pieces of brass wires, the only thing left was to test the "LEDs". I had to go out of my way (because I am stupid) and get these SMD LEDs, which are just surface mount LEDs that are hard to handle!
+                                    Anyways after burning multiple of these tiny little devils, I found out a way to do this using solder paste instead of actual solder.
+                                    The simple difference is that with the solder paste you just have to apply it onto the pads, place your rods on top of it and use a small heat gun to heat the pad just enough so that the paste melts and forms into a solid joint. </p>
+									<span class="image featured"><center><img src="images/led.jpg" width=90% lt="" /></center></span>
+									<p>
+                                    Luckily both of my hypotheses were proven, and I finally decided to work with "LED Brass sculptures". 
+                                    After this I laid out my plan into two parts:- </p>
+								<ol>
+                                <li>    Sketching:-   I decided to create 25 sketches out of which 5 would be simple 2d Objects, to begin with,5 would be a bit more complex 3D objects and the remaining 15 I reserved for a moonshot project. When designing with brass rods, I had to make sure that there are two isolated parts for each design for VCC and GND. Between these two "meshes" of brass, wires will reside in our LEDs. So basically these LEDs will kind of bridge the two parts of the design. (more clear in the example in the sketch).
+                                        The moonshot project - The Golden Sunflower. (i discuss this in detail in a later section)
+                                        2D objects in the sketch:- Circle, Triangle, Square, Diamond, tree.
+                                        3D objects in the sketch:- 3D Triangle, Cube, cylinder, pyramid,3D diamond. </li>
+
+										<span class="image featured"><center><img src="images/sketch1.jpg" width=90% lt="" /></center></span>
+
+                                  <li>   25 CAD Designs:- For this part, I just decided to use fusion 360, because I had
+                                    to learn this tool from the start and there are plenty of resources available for Autodesk fusion 360, and they provide a free version for students. While learning/doing the CAD designs I realized that in some of the 3D objects (like the diamond or the triangle) I can make it such that they have a place to hold a coin cell in a way that can power all the LEDs! I was so moved by this idea that I ended up spending hours designing an animation video that shows exactly that. If this was not enough, I even went ahead and rendered a proper realistic design with the LED switching on for one of the designs (The tree). Safe to say I got carried away.
+									So the way it works in Fusion 360 is you first make a 2D sketch with proper measurements, and then you "extrude" that sketch into 3d objects. I have shown an example of the same below using a triangle.
+									</li>
+								</ol>
+								<span class="image featured"><center><img src="images/cad1.jpg" width=90% lt="" /></center></span>
+								<span class="image featured"><center><img src="images/cad2.jpg" width=90% lt="" /></center></span>
+								<span class="image featured"><center><img src="images/cad3.png" width=90% lt="" /></center></span>
+								<span class="image featured"><center><img src="images/Fusion17.png" width=90% lt="" /></center></span>
+								<span class="image featured"><center><img src="images/Fusion18.png" width=90% lt="" /></center></span>
+								<span class="image featured"><center><img src="images/vid.gif" width=90% lt="" /></center></span>
+
+							</p>
 							</div>
 							<div class="row-6 row-12-mobilep">
-								<h3>And another subheading</h3>
-								<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>
+								<h3>The Golden Sunflower</h3>
+								<p>For this one, I was particularly inspired by this everblooming tulip that was made by this designer called "Jiri Praus". The idea was to create an outer frame of this sunflower out of brass rods and somehow embed LEDs and a mechanism for it to kind of close its petals when it is touched by anyone nearby (kind of like a touch me not). I began by sketching out 15 petals, a center "crown", the stem, the base, and finally the mechanism to open and close the petals. If you look at all these "shapes" individually you'll see nothing extraordinary in them. But connect them in just the right way and it becomes a beautiful spectacle. </p>
+							<p> <ol>
+                                    <p>I divided this task into three further parts:- </p>
+                                    <li> Sketch the petals, base, stem, and mechanism.(15 things) </li>
+                                    <li> Design everything on CAD (15 Things) </li>
+                                    <li> Design the PCB Circuit required for the mechanism (doesn't count as it's not a shade of brass.)
+                                    and finally, combine them all!</li>
+								</ol>
+									</p>
+									<p>
+                                    While designing this once I figured out the petal structure with the LEDs and the movement mechanism, it was easy to design everything in CAD. For the petals, I decided to give the periphery of the petal +5V and connect the LED's +5V to it. For the GND connection, I just used a piece of straight brass wire and made it look like the centerline of the petal.
+									</p><p>
+                                    The mechanism consisted of a wooden base with a servo motor attached inside it (with the required circuitry). There is a brass tube  (2mm OD and 1mm ID) that is protruding out of the base. There is another brass wire that is attached to one end of the servo motor through the tube to the Center "crown" which is just a pentadecagon (a polygon with 15 sides). This pentadecagon is surrounded by a bigger pentadecagon which further connects the petals to the entire base mechanism. 
+                                    I have attached a video below for more clarity.</p>
+
+								</p>
 							</div>
 						</div>
 					</div>
